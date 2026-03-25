@@ -1,3 +1,6 @@
+* {
+    max-width: 100%;
+}
 #temp-message {
     background-color: hsl(38, 79%, 62%);
     color: #000000;
@@ -47,16 +50,20 @@ nav {
     border-radius: 5px;
 }
 .logo-container .hamburger-menu .menu-icon {
+    display: inline-block;
     width: 10px;
     height: 3px;
     background-color: #DDDDDD;
     margin: 0;
 }
+.logo-container .hamburger-menu .menu-icon:last-child {
+    margin-top: 5px;
+}
 nav ul {
     list-style-type: none;;
     padding: 0;
     background: #55AA99;
-    overflow: hidden;
+    overflow: visible;
     width: 120%;
     margin: 0;
     position: absolute;
@@ -183,10 +190,11 @@ body {
     margin-left: -2vw;
 }
 #contact p {
+    display: inline-block;
     color: #DDDDDD;
     background-color: #25949D;
 /*    background: linear-gradient(to top right, #013446, #328675e1);*/
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     margin-top: 20px;
     margin-left: -1vw;
@@ -200,9 +208,12 @@ body {
     margin-left: 3vw;
 }
 #contact ul li {
+    display: inline-block;
     margin: 20px 0;
+    line-height: 40px;
 }
 #contact ul li a {
+    display: inline-block;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
@@ -210,6 +221,13 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     border: 2px solid #FFFFFF;
+}
+#contact ul li a:visited {
+    background-color: hsl(38, 0%, 70%);
+    color: #FFFFFF;
+}
+#contact ul li a:active {
+    background-color: hsl(38, 90%, 80%);
 }
 #contact ul li a:hover {
     text-decoration: underline;
