@@ -39,7 +39,7 @@ nav {
     text-align: left;
 }
 .logo-container .hamburger-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     cursor: pointer;
     margin-left: auto;
@@ -50,7 +50,7 @@ nav {
     border-radius: 5px;
 }
 .logo-container .hamburger-menu .menu-icon {
-    display: inline-block;
+    display: none;
     width: 10px;
     height: 3px;
     background-color: #DDDDDD;
@@ -105,6 +105,29 @@ nav ul li a:hover {
     border-radius: 3%;
     border: 5px solid #013446;
     box-shadow: #55AA99 1px 1px 0px;
+}
+.sign-up-button {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}.sign-up-button a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: hsl(38, 90%, 70%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+}.sign-up-button a:visited {
+    background-color: hsl(38, 0%, 70%);
+    color: #FFFFFF;
+}.sign-up-button a:active {
+    background-color: hsl(38, 90%, 80%);
+}.sign-up-button a:hover {
+    text-decoration: underline;
 }
 .logo:hover {
     border: 5px solid #55AA99;
@@ -193,7 +216,7 @@ body {
     margin-top: 20px;
     margin-left: -2vw;
 }
-#contact p {
+.contact-paragraph-background{
     display: inline-block;
     color: #DDDDDD;
     background-color: #25949D;
@@ -203,6 +226,14 @@ body {
     margin-top: 20px;
     margin-left: -1vw;
     padding: 20px 25px;
+    text-align: center;
+}
+#contact p {
+    color: #DDDDDD;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
 }
 #contact ul {
     
